@@ -1,0 +1,67 @@
+.MessageContainer{
+    height: calc(100% - 359px);
+    // height: calc(100% - 121px);
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+}
+.MessageContainer-content{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 3;
+}
+.MessageContainer-background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    background-image: url('https://ooo.0o0.ooo/2017/01/17/587dd3a2824bf.jpg');
+    background-position: cover;
+    opacity: 0.06;
+}
+.MessageContainer-ScrollButton{
+    position: absolute;
+    right: 11px;
+    bottom: 17px;
+    z-index: 9;
+    width: 42px;
+    height: 42px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 45px;
+    color: #9e9898;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.06), 0 2px 5px 0 rgba(0,0,0,0.2);
+}
+.MessageContainer-SignOwl{
+    display: none;
+    width: 222px;
+    height: 108px;
+    position: absolute;
+    z-index: 97;
+    top: -35px;
+    left: 50%;
+    margin-left: -111px;
+    transform: rotate(180deg) scale(0.4);
+}
+.MessageContainer-offline{
+    position: absolute;
+    width: 100%;
+    height: 38px;
+    z-index: 98;
+    background-color: #dc8d8d;
+    color: white;
+    line-height: 38px;
+    text-align: center;
+}

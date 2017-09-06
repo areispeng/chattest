@@ -1,0 +1,122 @@
+.manager-one,
+.pane-one{
+    height: 100%;
+    width: 40%;
+}
+.manager-two{
+    height: 100%;
+    width: 0px;
+}
+.manager-three,
+.pane-two,
+.pane-three{
+    height: 100%;
+    width: 60%;
+}
+.Header-close-btn{
+    display: none;
+}
+.Header-media-l{
+    display: block;
+}
+.Header-media-s{
+    display: none;
+}
+
+@media screen and (max-height: 500px) {
+    .Layout-container{
+        min-height:500px;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 648px) {
+    .Layout-container{
+        min-width: 100%;
+    }
+    .manager-one {
+        position: absolute;
+        width: 100%;
+    }
+    .manager-three {
+        width: 100%;
+    }
+    .pane-one {
+        top: 0px;
+        right: 0px;
+        position: absolute;
+        z-index: 21;
+        width: 100%;
+        background: white;
+        -ms-transition:all 0.35s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        -webkit-transition:all 0.35s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        transition:all 0.35s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    }
+    .pane-two {
+        width: 100%;
+    }
+    .MessageContainer-SignOwl{
+        display: block;
+    }
+    .Header-close-btn{
+        display: block;
+    }
+    .pane-one-hidden {
+        right: 0px;
+    }
+    .pane-one-show {
+        right: 100%;
+    }
+    .Header-media-l{
+    display: none;
+    }
+    .Header-media-s{
+        display: block;
+    }
+
+}
+@media screen and (min-width: 1025px) {
+    .manager-one,
+    .manager-three,
+    .pane-one{
+        width: 30%;
+    }
+    .pane-two{
+        width: 70%;
+    }
+    .manager-two,
+    .pane-three{
+        width: 40%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .Layout-container{
+        width: 1118px;
+        height: calc(100% - 38px);
+        margin: 0 auto;
+        top: 19px;
+        border-radius: 3px
+    }
+}
+@media screen and (min-width: 1320px) {
+    .Layout-container{
+        width: 1276px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .Layout-container{
+         width: 1380px;
+    }
+    .manager-one,
+    .manager-three,
+    .pane-one{
+        width: 25%;
+    }
+    .pane-two{
+        width: 75%;
+    }
+    .manager-two,
+    .pane-three{
+        width: 50%;
+    }
+}
