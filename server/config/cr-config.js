@@ -1,8 +1,8 @@
 module.exports = {
     ROBOT_NAME: '机器人小z',
-    INIT_ROOM: 'MDZZ',
+    INIT_ROOM: 'aries',
     INIT_ROOM_INFO: '有问题欢迎提issue',
-    INIT_ADMIN_EMAIL: 'mdzz',
+    INIT_ADMIN_EMAIL: 'aries',
     DEFAULT_AVATAR: 'http://oj7h98lzb.bkt.clouddn.com/user.svg',
     DEFAULT_GROUP_AVATAR: 'http://oj7h98lzb.bkt.clouddn.com/download.svg',
     DAY: 24*60*60*1000,
@@ -13,7 +13,7 @@ module.exports = {
     QINIU_ACCESS_KEY: 'WfabXLWGFotFsoyqTz-fL7gmD_wVjtNGa3sTmE3O',
     QINIU_SECRET_KEY: '8i3OPlKmgURNH3WQQjqbga-tYwN0r92XnnBdx8Ie',
     QINIU_CNAME: 'http://oj7h98lzb.bkt.clouddn.com',
-    QINIU_BUCKET: 'mdzz',
+    QINIU_BUCKET: 'aries',
     MAX_ROOM: 5,
     MAX_BLOCK: 30,
 }
