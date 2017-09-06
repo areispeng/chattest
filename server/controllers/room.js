@@ -122,9 +122,9 @@ module.exports = {
     joinRoom: function *(info,socket,cb) {
         const user = yield User.findOne({_id: info.user});
         const room = yield Room.findOne({inviteLink: info.inviteLink});
-        console.log('kickedUser[user._id]: ', kickedUser[user._id]);
-        console.log('room._id: ', room._id);
-        console.log('index: ', kickedUser[user._id].indexOf(room._id));
+        //console.log('kickedUser[user._id]: ', kickedUser[user._id]);
+        //console.log('room._id: ', room._id);
+        //console.log('index: ', kickedUser[user._id].indexOf(room._id));
         if(kickedUser[user._id] && kickedUser[user._id].indexOf(`${room._id}`) > -1) {
             console.log(kickedUser[user._id]);
             return cb({ isError: true, errMsg: 'ERROR1005'});
